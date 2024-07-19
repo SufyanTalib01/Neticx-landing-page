@@ -12,6 +12,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/b69ee90ce9.js" crossorigin="anonymous"></script>
+
+<!-- SPILDER  -->
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
 </head>
 
 <body>
@@ -48,7 +53,61 @@
                     <img src="img/Hero-Wrapper__image.png" alt="">
                 </div>
             </div>
-            <div class="services-div">hello</div>
+            <div class="services-div">
+                <h2>Services we offer</h2>
+               <!-- SPLIDER  -->
+               <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                                <div class="service-details">
+                                    <div class="service-image"><img src="img/service image/1.png" alt=""></div>
+                                    <h3>Mobile App Development</h3>
+                                    <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                                </div>
+                            
+                        </div>
+                        <div class="splide__slide">
+                            
+                                <div class="service-details">
+                                    <div class="service-image"><img src="img/service image/2.png" alt=""></div>
+                                    <h3>Web Design & Development</h3>
+                                    <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                                </div>
+                          
+                        </div>
+                        <div class="splide__slide">
+                            
+                                <div class="service-details">
+                                    <div class="service-image"><img src="img/service image/3.png" alt=""></div>
+                                    <h3>Software Testing Service</h3>
+                                    <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                                </div>
+                           
+                        </div>
+                        <div class="splide__slide">
+                            
+                                <div class="service-details">
+                                    <div class="service-image"><img src="img/service image/1.png" alt=""></div>
+                                    <h3>Software Final Testing</h3>
+                                    <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                                </div>
+                            
+                        </div>
+                        <div class="splide__slide">
+                           
+                                <div class="service-details">
+                                    <div class="service-image"><img src="img/service image/2.png" alt=""></div>
+                                    <h3>Software Deployment</h3>
+                                    <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                                </div>
+                        
+                        </div>
+                </div>
+            </div>
+            <!-- SPLIDER END  -->
+                
+            </div>
             <div class="about">
                 <div class="about-child">
                     <div class="about-text">
@@ -250,33 +309,67 @@
                     </div>
                 </div>
             </div>
+            <footer>
+                <div class="main-footer">
+                    <img src="img/logo2.png" alt="">
+                <div class="footer-services">
+                    <a href="">Home</a>
+                    <a href="">Services</a>
+                    <a href="">Who We Are</a>
+                </div>
+                <div class="footer-services">
+                    <a href="">Our Products</a>
+                    <a href="">Approach</a>
+                    <a href="">Testimonials</a>
+                </div>
+                <div class="location">
+                    <span>Location</span>
+                    <p><i class="fa-solid fa-location-dot"></i> PAK, Karachi</p>
+                    <p><i class="fa-solid fa-location-dot"></i> UAE, Dubai</p>
+                </div>
+                <div class="connect">
+                    <span>Connect with us</span>
+                    <p><i class="fa-solid fa-envelope"></i>Info@neticx.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+92 3139120034</p>
+                </div>
+                </div>
+                <p>© 2024 Neticx. All rights reserved.</p>
+    </footer>
         </section>
-        <footer>
-                    <div class="main-footer">
-                        <img src="img/logo2.png" alt="">
-                    <div class="footer-services">
-                        <a href="">Home</a>
-                        <a href="">Services</a>
-                        <a href="">Who We Are</a>
-                    </div>
-                    <div class="footer-services">
-                        <a href="">Our Products</a>
-                        <a href="">Approach</a>
-                        <a href="">Testimonials</a>
-                    </div>
-                    <div class="location">
-                        <span>Location</span>
-                        <p><i class="fa-solid fa-location-dot"></i> PAK, Karachi</p>
-                        <p><i class="fa-solid fa-location-dot"></i> UAE, Dubai</p>
-                    </div>
-                    <div class="connect">
-                        <span>Connect with us</span>
-                        <p><i class="fa-solid fa-envelope"></i>Info@neticx.com</p>
-                        <p><i class="fa-solid fa-phone"></i>+92 3139120034</p>
-                    </div>
-                    </div>
-                    <p>© 2024 Neticx. All rights reserved.</p>
-        </footer>
+        
     </div>
+    
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<script>
+    var splide = new Splide( '.splide', {
+  perPage: 2,
+  perMove: 1,
+
+  gap    : '1.2rem',
+  padding: '10rem',
+  type: 'loop',
+  drag: 'free',
+  snap: true,
+  autoplay: true,
+  arrows: false,
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+    480: {
+      perPage: 1,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+  },
+} );
+
+splide.mount();
+</script>
+<script src="script.js"></script>
 </body>
 </html>

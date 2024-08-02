@@ -542,6 +542,133 @@ color: white;
 .clients-text{
     letter-spacing: 1.5px;
 }
+/* TECH  */
+.tech{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7fa;
+    margin-top: 10px;
+    padding-top: 40px;
+}
+.tech hr{
+    width: 40px;
+    height: 4px;
+    background: radial-gradient(#D80E0E 10%, #000000 200%);
+    border: none;
+    margin-bottom: 20px;
+}
+.tech-heading{
+    /* background: #f2f2f2; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    font-size: 23px;
+}
+.tech-names{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+.tech-names a{
+    text-decoration: none;
+    color: black;
+}
+.technologies{
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+.tech-list{
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s linear;
+}
+.tech-list:hover{
+    transform: translateX(-670px);
+}
+.tech-backend{
+    /* background: green; */
+    width: 100%;
+}
+.backend-images-1{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.backend-images-1 li img{
+    height: 60px;
+}
+.backend-images-1 :nth-child(2) img{
+    height: 40px;
+}
+.backend-images-1 :nth-child(3) img{
+    height: 50px;
+}
+.backend-images-2{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.backend-images-2 li img{
+    height: 70px;
+}
+.backend-images-2 :nth-child(3) img{
+    height: 50px;
+}
+.backend-images-2 :nth-child(4) img{
+    height: 40px;
+}
+/* FRONTEND  */
+.tech-frontend{
+    /* background: yellow; */
+    width: 100%;
+}
+.frontend-images-1{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 40px;
+}
+.frontend-images-1 li img{
+    height: 50px;
+}
+/* .frontend-images-1 :nth-child(2) img{
+    height: 40px;
+}
+.frontend-images-1 :nth-child(3) img{
+    height: 50px;
+} */
+.frontend-images-2{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.frontend-images-2 li img{
+    height: 50px;
+}
+/* .frontend-images-2 :nth-child(3) img{
+    height: 50px;
+}
+.frontend-images-2 :nth-child(4) img{
+    height: 40px;
+} */
 /* FOOTER  */
 footer{
     height: 250px;
@@ -600,3 +727,44 @@ footer>p{
     font-size: 13px;
     letter-spacing: 1px;
 }
+
+/* NEW  */
+.tab {
+    margin-top: 30px;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    /* background-color: #ddd; */
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    /* background-color: #ccc; */
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+  #Paris{
+    width: 512px;
+    /* background-color: red; */
+  }

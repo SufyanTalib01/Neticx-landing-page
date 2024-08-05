@@ -1,3 +1,6 @@
+document.getElementById('London').style.display = "block";
+
+
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -18,3 +21,15 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+//   SIDEBAR 
+document.getElementById('sidebar-icon').addEventListener("click" , function (){
+    document.getElementById('sidebar-icon').style.display = 'none'
+    document.getElementById('close-icon').style.display = 'block'
+    document.querySelector('.sidebar').style.transform = "translateX(0)"
+})
+document.getElementById('close-icon').addEventListener("click" , function (){
+    document.getElementById('close-icon').style.display = 'none'
+    document.getElementById('sidebar-icon').style.display = 'block'
+    document.querySelector('.sidebar').style.transform = "translateX(100%)"
+})

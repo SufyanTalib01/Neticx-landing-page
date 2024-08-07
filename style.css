@@ -53,6 +53,10 @@ nav{
     color: black;
     text-decoration: none;
 }
+.hyperlinks:hover{
+    text-decoration: underline;
+    color: var(--main-color)
+}
 .active{
     text-decoration: underline;
     color: var(--main-color)
@@ -64,7 +68,6 @@ nav{
     background-color: #D80E0E;
     color: white;
     cursor: pointer;
-
 }
 /* SIDEBAR  */
 
@@ -744,7 +747,8 @@ color: white;
     margin-top: 10px;
     color: var(--paragraph-color);
 }
-.hr-div{
+/* HR DIV  */
+/* .hr-div{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -757,7 +761,62 @@ color: white;
 }
 .hr-div img{
     height: 30px;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%
 }
+.t1{
+    display: flex;
+    width: 100%;
+}
+.t2{
+    display: flex;
+    width: 100%;
+}
+table {
+    /* border: 1px solid black; */
+    height: 20px;
+}
+.table1{
+    width: 15%;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.table2{
+    width: 30%;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.table3{
+    width: 30%;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.table4{
+    width: 15%;
+    border-bottom: 1px solid;
+}
+
+
+.table5{
+    width: 25%;
+    border-right: 1px solid;
+}
+.table6{
+    width: 30%;
+    border-right: 1px solid;
+}
+.table7{
+    width: 30%;
+    border-right: 1px solid;
+}
+.table8{
+    width: 15%;
+}
+
 /* FOOTER  */
 footer{
     height: 250px;
@@ -849,7 +908,7 @@ footer>p{
     width: 512px;
   }
   /* FOR TABLET  */
-  @media (max-width: 768px){
+  @media (max-width: 900px){
     .is-next{
     transform: translateY(0);
     }
@@ -939,7 +998,7 @@ footer>p{
   }
 
 /* FOR LARGE MOBILE  */
-@media (max-width: 426px){
+@media (max-width: 430px){
     .nav-links ul{
         display: none;
     }
@@ -973,6 +1032,15 @@ footer>p{
     .about{
         height: 562px;
         flex-direction: column;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text span{
+        text-align: center;
     }
     .service-details p{
         font-size: 12px;
@@ -1115,4 +1183,34 @@ footer>p{
     .tab button{
         font-size: 9px;
     }
+    .connect{
+        font-size: 8px;
+    }
+}
+
+
+/* WORK 1 DEMO  */
+.work-step{
+    width: 90%;
+    justify-content: center;
+    margin-right: 8%;
+    gap: 8%;
+}
+.work-1{
+    width: 238px;
+    height: 113px;
+}
+.work-1 p{
+    font-size: 9px;
+}
+.work-1 span{
+    font-size: 12px;
+}
+.work-step2{
+    align-items: center;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-left: 9%;
+    gap: 9%;
 }

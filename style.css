@@ -765,8 +765,14 @@ color: white;
 
 .container{
     display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+}
+.table-container{
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    width: 90%
 }
 .t1{
     display: flex;

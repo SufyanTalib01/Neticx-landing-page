@@ -256,6 +256,7 @@ color: white;
     /* background: pink; */
 }
 .about-text hr{
+    margin-bottom: 30px;
     width: 40px;
     height: 4px;
     background: radial-gradient(#D80E0E 10%, #000000 200%);

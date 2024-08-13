@@ -464,7 +464,7 @@ color: white;
     margin-top: 20px;
 }
 .morebtn{
-    border: 7px solid #D80E0E;
+    border: 3px solid #D80E0E;
     padding: 10px;
     margin-block: 30px;
 }
@@ -569,7 +569,7 @@ color: white;
     width: 100%;
     background: radial-gradient(#D80E0E 10%, #000000 200%);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .clients-detail{

@@ -565,6 +565,7 @@ color: white;
 }
 /* CLIENTS  */
 .total-clients{
+    padding-inline: 100px;
     height: 250px;
     width: 100%;
     background: radial-gradient(#D80E0E 10%, #000000 200%);

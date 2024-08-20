@@ -38,13 +38,76 @@ document.getElementById('close-icon').addEventListener("click" , function (){
 // TEST 
 
 if (window.matchMedia("(max-width: 425px)").matches) {
-  // Your JavaScript code for mobile devices
-  document.write("Hello World");
-} else {
- document.write("this is not mobile")
-  // Code for desktop or nothing
+  let Flag = 0;
+
+function Controller(x){
+    Flag = Flag + x;
+    Slideshow(Flag);
 }
 
+function Slideshow(num){
+    let Customer = document.getElementsByClassName('customer-id');
+
+    if(num === Customer.length){
+        Flag = 0;
+        num = 0;
+    }
+    if(num < 0){
+        Flag = Customer.length - 1;
+        num = Customer.length - 1;
+    }
+
+    for(let y of Customer){
+        y.style.display = 'none';
+    }
+    Customer[num].style.display = "block";
+
+    
+}
+Slideshow(Flag);
+console.log("this is mobile Mode");
+}
+
+
+// TEXT 
+if (window.matchMedia("(max-width: 425px)").matches) {
+  let reviewFlag = 0;
+
+function Controller(x){
+    reviewFlag +=  x;
+    Slideshow(reviewFlag);
+}
+function reviewSlideshow(number){
+  let reviewPara = document.getElementsByClassName('review-para-child');
+
+  if(number === reviewPara.length){
+    reviewFlag = 0;
+    number = 0;
+  }
+  if(number < 0){
+    reviewFlag = reviewPara.length - 1;
+      number = reviewPara.length - 1;
+  }
+
+  for(let y of reviewPara){
+      y.style.display = 'none';
+  }
+  reviewPara[number].style.display = "block";
+
+  
+}
+reviewSlideshow(reviewFlag);
+console.log("this is review mobile Mode");
+}
+
+// function reviewPara(){
+//   let reviewParagraph = document.getElementsByClassName('review-para-child')
+//   for (let x of reviewParagraph){
+//     x.style.display = 'none';
+//   }
+//   reviewParagraph[0].style.display = 'block'
+// }
+// reviewPara();
 
 
 

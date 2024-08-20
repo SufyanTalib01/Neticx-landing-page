@@ -339,10 +339,18 @@ color: white;
     width: 250px;
 }
 .reviews-para{
-    margin-top: 40px;
-    width: 400px;
+    margin-top: 0px;
+    width: 458px;
+    height: 144px;
     color: var(--paragraph-color);
     font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-para-child{
+    width: 80%;
+    display: none;
 }
 /* CUSTOMERS  */
 .customers{
@@ -1071,7 +1079,9 @@ footer>p{
 
 /* FOR LARGE MOBILE  */
 @media (max-width: 430px){
-
+    .pf-image-active{
+        height: 80px;
+    }
     .nav-links ul{
         display: none;
     }

@@ -62,7 +62,8 @@ nav{
 }
 .active{
     text-decoration: underline;
-    color: var(--main-color)
+    color: var(--main-color);
+    border-bottom: 1px solid #D80E0E;
 }
 .nav-button button{
     padding: 9px 15px;
@@ -263,7 +264,10 @@ color: white;
     width: 40px;
     height: 4px;
     background: radial-gradient(#D80E0E 10%, #000000 200%);
-    border: none;
+    border: none; 
+}
+.about-text h2{
+    margin-bottom: 19px;
 }
 
 .about-text span strong{
@@ -456,8 +460,9 @@ color: white;
     display: flex;
     justify-content: end;
     align-items: center;
-    background: linear-gradient(to right , #F76680 96px, #57007B 148%);
+    background: linear-gradient(225deg, #F76680 -25%, #57007B 85%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-size: 13px;
@@ -866,7 +871,7 @@ footer{
     /* padding-inline: 20px; */
 }
 .main-footer img{
-    height: 100px;
+    height: 50px;
 }
 .footer-services{
     display: flex;
@@ -877,6 +882,9 @@ footer{
 .footer-services a{
     text-decoration: none;
     color: white;
+}
+.footer-services a:hover{
+    text-decoration: underline;
 }
 .location{
     color: white;
@@ -892,6 +900,11 @@ footer{
     display: flex;
     gap: 10px;
 }
+.location p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
 .connect{
     color: white;
     display: flex;
@@ -905,6 +918,10 @@ footer{
 .connect p{
     display: flex;
     gap: 10px;
+}
+.connect p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 footer>p{
     color: white;
@@ -1018,7 +1035,9 @@ footer>p{
         width: 30%;
     }
     .main-footer img {
-        height: 67px;
+       
+            height: 40px;
+
     }
     .footer-services{
         font-size: 10px;
@@ -1040,6 +1059,12 @@ footer>p{
     }
     .container{
         display: none;
+    }
+    .total-clients{
+        padding-inline: 42px;
+    }
+    .main-footer{
+        margin-inline: 42px;
     }
     
   }
@@ -1149,15 +1174,20 @@ footer>p{
     }
     .reviews {
         height: auto;
+        padding-inline: 17px;
     }
     .customers {
-        flex-direction: column;
+        display: block;
+        overflow: hidden;
+        height: 265px;
     }
     .arrow{
-        display: none;
+        display: flex;
+        width: 61px
     }
     .customer-id{
         opacity: 1;
+        display: none;
     }
     .tab button{
         font-size: 11px;
@@ -1174,6 +1204,7 @@ footer>p{
     }
     .reviews-para{
         width: 83%;
+        padding-inline: 17px;
     }
     .about-text{
         width: 100%;
@@ -1238,6 +1269,18 @@ footer>p{
     .margin{
         margin-inline: 10px;
     }
+    .main-footer{
+        margin-inline: 0px;
+    }
+    .main-footer img{
+    height: 34px;
+    }
+    footer{
+        padding-block: 18px;
+    }
+    .service-details{
+        max-width: 248px;
+    }
 }
 @media (max-width: 321px){
     .tab button{
@@ -1249,4 +1292,5 @@ footer>p{
 }
 
 
-/* WORK 1 DEMO  */
+/* UI FIXING  */
+

@@ -24,6 +24,7 @@ function openCity(evt, cityName) {
 
 //   SIDEBAR 
 document.getElementById('sidebar-icon').addEventListener("click" , function (){
+  console.log('hello world');
     document.getElementById('sidebar-icon').style.display = 'none'
     document.getElementById('close-icon').style.display = 'block'
     document.querySelector('.sidebar').style.transform = "translateX(0)"
@@ -32,4 +33,18 @@ document.getElementById('close-icon').addEventListener("click" , function (){
     document.getElementById('close-icon').style.display = 'none'
     document.getElementById('sidebar-icon').style.display = 'block'
     document.querySelector('.sidebar').style.transform = "translateX(100%)"
-})
+});
+
+// TEST 
+
+if (window.matchMedia("(max-width: 425px)").matches) {
+  // Your JavaScript code for mobile devices
+  document.write("Hello World");
+} else {
+ document.write("this is not mobile")
+  // Code for desktop or nothing
+}
+
+
+
+

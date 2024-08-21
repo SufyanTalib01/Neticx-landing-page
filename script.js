@@ -40,14 +40,17 @@ document.getElementById('close-icon').addEventListener("click" , function (){
 if (window.matchMedia("(max-width: 425px)").matches) {
   let Flag = 0;
 
+  
+
 function Controller(x){
     Flag = Flag + x;
     Slideshow(Flag);
+    reviewFlag = reviewFlag +  x;
+    reviewSlideshow(reviewFlag);
 }
 
 function Slideshow(num){
     let Customer = document.getElementsByClassName('customer-id');
-
     if(num === Customer.length){
         Flag = 0;
         num = 0;
@@ -61,22 +64,12 @@ function Slideshow(num){
         y.style.display = 'none';
     }
     Customer[num].style.display = "block";
-
-    
 }
 Slideshow(Flag);
 console.log("this is mobile Mode");
-}
-
 
 // TEXT 
-if (window.matchMedia("(max-width: 425px)").matches) {
-  let reviewFlag = 0;
-
-function Controller(x){
-    reviewFlag +=  x;
-    Slideshow(reviewFlag);
-}
+let reviewFlag = 0;
 function reviewSlideshow(number){
   let reviewPara = document.getElementsByClassName('review-para-child');
 
@@ -100,14 +93,11 @@ reviewSlideshow(reviewFlag);
 console.log("this is review mobile Mode");
 }
 
-// function reviewPara(){
-//   let reviewParagraph = document.getElementsByClassName('review-para-child')
-//   for (let x of reviewParagraph){
-//     x.style.display = 'none';
-//   }
-//   reviewParagraph[0].style.display = 'block'
-// }
-// reviewPara();
+
+
+let reviewParagraph = document.getElementsByClassName('review-para-child')
+reviewParagraph[0].style.display = 'block'
+
 
 
 

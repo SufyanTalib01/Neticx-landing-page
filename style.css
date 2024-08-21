@@ -655,17 +655,22 @@ color: white;
     align-items: center;
     gap: 50px;
     margin-top: 40px;
+    width: 55%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .backend-images-1 li img{
-    height: 60px;
+    height: 40px;
 }
-.backend-images-1 :nth-child(2) img{
+/* .backend-images-1 :nth-child(2) img{
     height: 40px;
 }
 .backend-images-1 :nth-child(3) img{
     height: 50px;
-}
+} */
 .backend-images-2{
     display: flex;
     list-style: none;
@@ -964,6 +969,7 @@ footer>p{
     display: none;
     padding: 6px 12px;
     border-top: none;
+    
   }
   #Paris{
     width: 512px;
@@ -1163,7 +1169,10 @@ footer>p{
     }
     .nft {
      width: 95%;
-     height: 200px;
+     height: 159px;
+    }
+    .nft-text{
+        padding-inline: 10px;
     }
     .nft span{
         font-size: 10px;
@@ -1215,6 +1224,7 @@ footer>p{
     .reviews-para{
         width: 83%;
         padding-inline: 17px;
+        margin-top: 16px;
     }
     .about-text{
         width: 100%;
@@ -1293,6 +1303,15 @@ footer>p{
     }
 }
 @media (max-width: 321px){
+    .reviews-para{
+        padding-inline: 0;
+    }
+    .reviews{
+        padding-inline: 7px;
+    }
+    .arrow{
+        width: 75px;
+    }
     .tab button{
         font-size: 9px;
     }

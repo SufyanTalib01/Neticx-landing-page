@@ -37,7 +37,7 @@ document.getElementById('close-icon').addEventListener("click" , function (){
 
 // TEST 
 
-if (window.matchMedia("(max-width: 425px)").matches) {
+if (window.matchMedia("(max-width: 736px)").matches) {
   let Flag = 0;
 
   

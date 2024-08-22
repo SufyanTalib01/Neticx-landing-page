@@ -180,6 +180,10 @@ text-decoration: none;
     background-color: transparent;
     cursor: pointer;
 }
+.intro-button :nth-child(2):hover{
+    background-color: #D80E0E;
+    color: white;
+}
 .intro-image{
     display: flex;
     flex-direction: column;
@@ -598,7 +602,7 @@ color: white;
 }
 /* TECH  */
 .tech{
-    height: 450px;
+    height: 459px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -671,7 +675,7 @@ color: white;
 .backend-images-1 :nth-child(3) img{
     height: 50px;
 } */
-.backend-images-2{
+/* .backend-images-2{
     display: flex;
     list-style: none;
     align-items: center;
@@ -687,18 +691,22 @@ color: white;
 }
 .backend-images-2 :nth-child(4) img{
     height: 40px;
-}
+} */
 /* FRONTEND  */
 .tech-frontend{
     width: 100%;
 }
 .frontend-images-1{
+    /* width: 92%; */
+    width: 374px;
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
+    gap: 53px;
     margin-top: 40px;
+    flex-wrap: wrap;
+    
 }
 .frontend-images-1 li img{
     height: 50px;
@@ -884,7 +892,7 @@ footer{
     /* padding-inline: 20px; */
 }
 .main-footer img{
-    height: 50px;
+    height: 42px;
 }
 .footer-services{
     display: flex;
@@ -971,9 +979,7 @@ footer>p{
     border-top: none;
     
   }
-  #Paris{
-    width: 512px;
-  }
+  
   /* FOR TABLET  */
   @media (max-width: 900px){
     .margin{
@@ -1050,7 +1056,7 @@ footer>p{
     }
     .main-footer img {
        
-            height: 40px;
+            height: 34px;
 
     }
     .footer-services{
@@ -1084,7 +1090,7 @@ footer>p{
   }
 
 /* FOR LARGE MOBILE  */
-@media (max-width: 430px){
+@media (max-width: 736px){
     .pf-image-active{
         height: 80px;
     }
@@ -1202,7 +1208,7 @@ footer>p{
     }
     .arrow{
         display: flex;
-        width: 61px
+        width: 41px
     }
     .customer-id{
         opacity: 1;
@@ -1236,18 +1242,23 @@ footer>p{
     .tech{
         height: auto;
     }
-    .backend-images-1{
-        flex-direction: column;
-        gap: 25px; 
+    .tabcontent{
+        margin-bottom: 30px;
     }
-    .backend-images-2{
+    .backend-images-1{
+        gap: 25px; 
+        padding-inline: 22%;
+        width: 100%;
+    }
+    /* .backend-images-2{
         flex-direction: column;
         gap: 25px;
         margin-bottom: 20px;
-    }
+    } */
     .frontend-images-1{
-        flex-direction: column;
         gap: 25px; 
+        padding-inline: 22%;
+        width: 100%;
     }
     .frontend-images-2{
         flex-direction: column;
@@ -1263,16 +1274,22 @@ footer>p{
         gap: 16px;
     }
     .footer-services{
-        flex-direction: row;
-    }
-    .footer-services{
-        flex-direction: row;
+        flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 13px;
     }
     .location{
-        flex-direction: row;
+        flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
     }
     .connect{
-        flex-direction: row;
+        flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
     }
     footer>p{
         margin-bottom: 10px;
@@ -1293,7 +1310,7 @@ footer>p{
         margin-inline: 0px;
     }
     .main-footer img{
-    height: 34px;
+    height: 24px;
     }
     footer{
         padding-block: 18px;
@@ -1301,8 +1318,27 @@ footer>p{
     .service-details{
         max-width: 248px;
     }
+    .splide__slide{
+        margin-right: -2.3rem !important;
+    }
+    .splide__track--draggable{
+        padding-left: 6rem !important;
+    }
+}
+@media (max-width: 565px){
+    .arrow{
+        width: 50px;
+    }
+}
+@media(max-width: 376px){
+    .splide__track--draggable{
+        padding-left: 4rem !important;
+    }
 }
 @media (max-width: 321px){
+    .splide__track--draggable{
+        padding-left: 2rem !important;
+    }
     .reviews-para{
         padding-inline: 0;
     }

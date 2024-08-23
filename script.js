@@ -28,6 +28,7 @@ document.getElementById('sidebar-icon').addEventListener("click" , function (){
     document.getElementById('sidebar-icon').style.display = 'none'
     document.getElementById('close-icon').style.display = 'block'
     document.querySelector('.sidebar').style.transform = "translateX(0)"
+    console.log("hello world");
 })
 document.getElementById('close-icon').addEventListener("click" , function (){
     document.getElementById('close-icon').style.display = 'none'
@@ -97,6 +98,11 @@ console.log("this is review mobile Mode");
 
 let reviewParagraph = document.getElementsByClassName('review-para-child')
 reviewParagraph[0].style.display = 'block'
+
+// PORTFOLIO PAGE 
+let allProjects = document.querySelector('.allprojects');
+
+
 
 
 

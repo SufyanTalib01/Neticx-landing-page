@@ -137,9 +137,7 @@ section{
 .portfolio-btns {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 30px;
 
 }
@@ -167,6 +165,9 @@ section{
 }
 
 /* .PROJECTS  */
+.allprojects{
+    /* display: none; */
+}
 .projects{
     width: 60%;
     justify-content: center;
@@ -288,12 +289,10 @@ footer{
     align-content: center;
 }
 .main-footer{
-    /* background-color: green; */
     margin-inline: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding-inline: 20px; */
 }
 .main-footer img{
     height: 41px;
@@ -345,6 +344,13 @@ footer>p{
     font-size: 13px;
     letter-spacing: 1px;
 }
+@media(max-width: 1092px){
+    .portfolio-btns{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 @media(max-width: 903px){
     .projects{
         width: 69%;
@@ -390,10 +396,7 @@ footer>p{
     .portfolio-btns{
         padding-inline: 20px;
     }
-    /* .portfolio-btns button{
-        width: 130px;
-        font-size: 11px;
-    } */
+    
     .thirdbtn{
         width: 180px !important;
     }
@@ -431,6 +434,23 @@ footer>p{
         margin-bottom: 10px;
     }
 }
+@media (max-width: 698px){
+    .nav-links ul{
+        display: none;
+    }
+    .nav-button button{
+        display: none;
+    }
+    #close-icon{
+        display: none;
+        cursor: pointer;
+    }
+    #sidebar-icon{
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
 /* FOR LARGE MOBILE  */
 @media (max-width: 430px){
 
@@ -448,38 +468,7 @@ footer>p{
         font-size: 22px;
     }
     
-    footer{
-        height: auto;
-        padding-block: 18px;
-    }
-    .main-footer{
-        flex-direction: column;
-        gap: 16px;
-    }
-    .main-footer img{
-        height: 34px;
-    }
-    .footer-services{
-        flex-direction: row;
-    }
-    .footer-services{
-        flex-direction: row;
-    }
-    .location{
-        flex-direction: row;
-    }
-    .connect{
-        flex-direction: row;
-    }
-    footer>p{
-        margin-bottom: 10px;
-    }   
-    .portfolio-btns{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        gap: 10px;
-    }
+    
     .portfolio-text p{
         font-size: 18px;
     }
@@ -493,17 +482,9 @@ footer>p{
         width: 100%;
     }
 }
-@media (max-width: 375px){
-    .portfolio-btns{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-        gap: 10px;
-    }
-}
 @media (max-width: 321px){
     .connect{
-        font-size: 8px;
+        font-size: 11px;
     }
 }
 

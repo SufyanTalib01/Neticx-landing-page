@@ -160,13 +160,17 @@ section{
     background-color: #D80E0E !important;
     color: white;
 }
+.portfolio-btns-active{
+    background-color: var(--main-color) !important;
+    color: white;
+}
 .thirdbtn{
     width: 200px !important;
 }
 
 /* .PROJECTS  */
 .allprojects{
-    /* display: none; */
+/* display: none; */
 }
 .projects{
     width: 60%;

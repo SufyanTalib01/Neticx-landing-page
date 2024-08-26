@@ -101,11 +101,6 @@ reviewParagraph[0].style.display = 'block'
 
 // PORTFOLIO PAGE 
 
-// let allProjects = document.getElementById('allprojects');
-
-// allProjects.map((Pname) => {
-//   Pname.style.display = 'none';
-// })
 
 
 

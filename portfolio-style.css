@@ -99,6 +99,9 @@ nav {
 color: white;
 text-decoration: none;
 } 
+.sidebar ul li a:hover{
+color: rgb(202, 198, 198);
+}
 
 /* PORTFOLIO IMAGE  */
 section{
@@ -139,7 +142,6 @@ section{
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
-
 }
 
 .portfolio-btns button {
@@ -228,6 +230,42 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.project7{
+    background-image: url(/img/projectsimage/mobiledevlopment/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project8{
+    background-image: url(/img/projectsimage/mobiledevlopment/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project9{
+    background-image: url(/img/projectsimage/mobiledevlopment/3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project10{
+    background-image: url(/img/projectsimage/mobiledevlopment/4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project11{
+    background-image: url(/img/projectsimage/mobiledevlopment/5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project12{
+    background-image: url(/img/projectsimage/mobiledevlopment/6.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -259,6 +297,10 @@ section{
 }
 .project-view-btn:hover{
     background: #dad8d8;
+}
+
+#app-projects{
+    display: none;
 }
 
 
@@ -379,7 +421,7 @@ footer>p{
         width: 100%;
     }
     .main-footer img {
-        height: 34px;
+        height: 25px;
     }
     .footer-services{
         font-size: 10px;
@@ -484,6 +526,9 @@ footer>p{
     }
     .projects{
         width: 100%;
+    }
+    .main-footer img {
+        height: 20px;
     }
 }
 @media (max-width: 321px){

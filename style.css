@@ -109,6 +109,10 @@ nav{
 color: white;
 text-decoration: none;
 } 
+
+.sidebar ul li a:hover{
+    color: rgb(202, 198, 198);
+    }
 /* INTRO  */
 
 

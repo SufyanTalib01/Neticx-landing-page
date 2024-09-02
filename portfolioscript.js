@@ -24,12 +24,55 @@ document.getElementById('sidebar-icon').addEventListener("click" , function (){
 function mobileAppbtn(){
   webProject.style.display = 'none';
   appProject.style.display = 'flex';
-  webBtnID.classList.remove('portfolio-btns-active');
+  appBtnID.classList.remove('portfolio-btns-active');
+  webBtnID.classList.remove('portfolio-btns-active')
+  document.getElementById('dataBaseBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('frontendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('backendBtn').classList.remove('portfolio-btns-active');
+  // webBtnID.classList.remove('portfolio-btns-active');
   appBtnID.className = "portfolio-btns-active";
 }
 function webBtn(){
   webProject.style.display = 'flex';
   appProject.style.display = 'none';
   appBtnID.classList.remove('portfolio-btns-active');
+  webBtnID.classList.remove('portfolio-btns-active')
+  document.getElementById('dataBaseBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('frontendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('backendBtn').classList.remove('portfolio-btns-active');
+  // appBtnID.classList.remove('portfolio-btns-active');
   webBtnID.className = 'portfolio-btns-active';
+}
+
+function frontendBtn(){
+  webProject.style.display = 'flex';
+  appProject.style.display = 'none';
+  appBtnID.classList.remove('portfolio-btns-active');
+  webBtnID.classList.remove('portfolio-btns-active')
+  document.getElementById('dataBaseBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('frontendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('backendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('frontendBtn').className = 'portfolio-btns-active';
+}
+
+function dataBaseBtn(){
+  webProject.style.display = 'none';
+  appProject.style.display = 'flex';
+  appBtnID.classList.remove('portfolio-btns-active');
+  webBtnID.classList.remove('portfolio-btns-active')
+  document.getElementById('dataBaseBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('frontendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('backendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('dataBaseBtn').className = 'portfolio-btns-active';
+}
+
+function backendBtn(){
+  webProject.style.display = 'flex';
+  appProject.style.display = 'none';
+  appBtnID.classList.remove('portfolio-btns-active');
+  webBtnID.classList.remove('portfolio-btns-active')
+  document.getElementById('dataBaseBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('frontendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('backendBtn').classList.remove('portfolio-btns-active');
+  document.getElementById('backendBtn').className = 'portfolio-btns-active';
 }

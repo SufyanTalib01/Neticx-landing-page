@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #002b36;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 320px;
+        }
+
+        .arrow {
+            cursor: pointer;
+            color: #ff4500;
+            font-size: 24px;
+            user-select: none;
+            padding: 0 10px;
+        }
+
+        .dates-wrapper {
+            display: flex;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .date-box {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 2px solid #008080;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 100px;
+            flex-shrink: 0;
+        }
+
+        .date-box.selected {
+            border-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slider-container">
+    <div class="arrow" id="prevArrow">&#9664;</div>
+    <div class="dates-wrapper" id="datesWrapper">
+        <div id="dateDisplay1" class="date-box selected"></div>
+        <div id="dateDisplay2" class="date-box"></div>
+        <div id="dateDisplay3" class="date-box"></div>
+    </div>
+    <div class="arrow" id="nextArrow">&#9654;</div>
+</div>
+
+<script>
+    const dateDisplays = [
+        document.getElementById('dateDisplay1'),
+        document.getElementById('dateDisplay2'),
+        document.getElementById('dateDisplay3')
+    ];
+
+    const datesWrapper = document.getElementById('datesWrapper');
+
+    // Get the current date
+    let currentDate = new Date();
+
+    // Function to format the date as Day Mon DD
+    function formatDate(date) {
+        const options = { weekday: 'short', month: 'short', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
+
+    // Function to update the displayed dates
+    function updateDateDisplays() {
+        for (let i = 0; i < dateDisplays.length; i++) {
+            let newDate = new Date(currentDate);
+            newDate.setDate(currentDate.getDate() + i);
+            dateDisplays[i].textContent = formatDate(newDate);
+        }
+    }
+
+    // Initialize the display with the current date
+    updateDateDisplays();
+
+    // Function to handle next arrow click
+    document.getElementById('nextArrow').addEventListener('click', () => {
+        currentDate.setDate(currentDate.getDate() + 1);
+        datesWrapper.style.transform = 'translateX(-100%)';
+        setTimeout(() => {
+            updateDateDisplays();
+            datesWrapper.style.transition = 'none';
+            datesWrapper.style.transform = 'translateX(0)';
+            void datesWrapper.offsetWidth; // Trigger reflow
+            datesWrapper.style.transition = 'transform 0.4s ease-in-out';
+        }, 400);
+    });
+
+    // Function to handle previous arrow click
+    document.getElementById('prevArrow').addEventListener('click', () => {
+        currentDate.setDate(currentDate.getDate() - 1);
+        datesWrapper.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            updateDateDisplays();
+            datesWrapper.style.transition = 'none';
+            datesWrapper.style.transform = 'translateX(0)';
+            void datesWrapper.offsetWidth; // Trigger reflow
+            datesWrapper.style.transition = 'transform 0.4s ease-in-out';
+        }, 400);
+    });
+</script>
+
+</body>
+</html>
